@@ -156,37 +156,7 @@ These are all the parameters used by `hugo-coder` theme.
 | enableTwemoji                 | bool   | No       | Adds support for Twemoji                         | `false`                          | `true` or `false`                                |
 | disableDefaultJsScripts       | bool   | No       | If true, disables default js scripts (coder.js)  | `false`                          | `true` or `false`                                |
 
-### Social Icons Configuration
-
-Social Icons are optional. To use them you will need to set at least all the following required parameters for each icon.
-
-| Configuration  | Type   | Required | Description                              | Example                         |
-| -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
-| name           | string | Yes      | Icon name.                               | `"Github"`                      |
-| icon           | string | Yes      | FontAwesome icon classes.                | `"fa-brands fa-github"`         |
-| weight         | int    | Yes      | Icon order.                              | `1`                             |
-| url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"` |
-
-An example:
-
 ```toml
-[[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/johndoe/"
-[[params.social]]
-  name = "Gitlab"
-  icon = "fa-brands fa-gitlab fa-2x"
-  weight = 2
-  url = "https://gitlab.com/johndoe/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa-brands fa-x-twitter fa-2x"
-  weight = 3
-  url = "https://twitter.com/johndoe/"
-```
-
 ### Menu Items Configurations
 
 Menu Items are optional. To use them you will need to set all the following required parameters for each icon.
@@ -309,23 +279,6 @@ style = "github-dark"
   series = "series"
   tag = "tags"
   author = "authors"
-
-# Social links
-[[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/johndoe/"
-[[params.social]]
-  name = "Gitlab"
-  icon = "fa-brands fa-gitlab fa-2x"
-  weight = 2
-  url = "https://gitlab.com/johndoe/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa-brands fa-x-twitter fa-2x"
-  weight = 3
-  url = "https://twitter.com/johndoe/"
 
 # Menu links
 [[menu.main]]
