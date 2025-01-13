@@ -9,7 +9,6 @@
         {{ i18n "see_also" | default "See also in" }} {{ . }}
         <a class="heading-link" href="#{{ i18n "see_also" | default "See also in" | anchorize }}-{{ anchorize . | safeURL }}">
           🔗
-          <span class="sr-only">{{ i18n "link_to_heading" | default "Link to heading" }}</span>
         </a>
       </h3>
       <nav>

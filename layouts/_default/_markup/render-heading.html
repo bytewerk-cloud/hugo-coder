@@ -1,6 +1,6 @@
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">
   {{ .Text | safeHTML }}
   <a class="heading-link" href="#{{ .Anchor | safeURL }}">
-    <span class="sr-only">🔗 {{ i18n "link_to_heading" | default "Link to heading" }}</span>
+    <span class="sr-only">🔗</span>
   </a>
 </h{{ .Level }}>
