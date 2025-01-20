@@ -1,5 +1,9 @@
 <footer class="footer">
   <section class="container">
+  {{ if .Site.Params.fivetwelfkbclub }}
+    <a href="https://512kb.club"><img src="/images/green-team.svg" alt="512kb.club"/></a>
+    <br />
+  {{ end }}
     ©
     {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
       {{ .Site.Params.since }} -
